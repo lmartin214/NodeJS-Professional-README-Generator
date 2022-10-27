@@ -53,6 +53,11 @@ const questions = [
         name: 'contributing',
         message: 'What does the user need to know about contributing to the repo?',
       },
+      {
+        type: 'input',
+        name: 'file',
+        message: 'Please name file "README".',
+      },
 ];
 
 //Function for users input to tobe returned as answers
@@ -61,8 +66,10 @@ function userInput() {
 }
 
 //Created a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+function writeToFile(file, data) {
+    fs.writeFile(`${file}.md`, data, (err) => {
+        err ? console.log(err) : console.log(`Your file, ${file}.md, was successfully generated!`);
+    })
 }
 
 //Created a function to initialize app
