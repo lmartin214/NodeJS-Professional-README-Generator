@@ -1,5 +1,5 @@
 {
-  "name": "static-site",
+  "name": "nodejs-professional-readme-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmartin214/NodeJS-Professional-README-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lmartin214/NodeJS-Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/lmartin214/NodeJS-Professional-README-Generator#readme"
 }
