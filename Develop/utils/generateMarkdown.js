@@ -1,4 +1,5 @@
 // Function to generate markdown for README
+// credit "https://opensource.org/licenses" 
 function generateMarkdown(data) {
   const badgeLicense = data.license.split(" ").join("%20");
   const urlLicense = data.license.split(" ").join("-");
